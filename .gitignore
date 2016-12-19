@@ -1,3 +1,7 @@
+# Project ignores
+.todo
+
+## Default python ignores from github
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
