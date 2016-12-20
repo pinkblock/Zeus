@@ -15,8 +15,7 @@ install: "pip install -r requirements.txt"
 script: nosetests --config=setup-ci.cfg
 
 deploy:
-  - provider: codedeploy
-      wait-until-deployed: true
+    provider: codedeploy
     revision_type: github
     access_key_id: AKIAIREOSHVK2PRY5LYQ
     secret_access_key: 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
