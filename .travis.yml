@@ -13,14 +13,3 @@ python:
 install: "pip install -r requirements.txt"
 # command to run tests
 script: nosetests --config=setup-ci.cfg
-
-deploy:
-    provider: codedeploy
-    revision_type: github
-    access_key_id: AKIAIREOSHVK2PRY5LYQ
-    secret_access_key: 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
-    bucket: zeus.bucket.1
-    key: latest/zeus.zip
-    application: zeus
-    deployment_group: zeus-ci-dev
-    region: us-west-2
